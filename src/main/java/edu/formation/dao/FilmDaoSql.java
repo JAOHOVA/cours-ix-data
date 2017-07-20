@@ -3,6 +3,8 @@ package edu.formation.dao;
 import java.util.ArrayList;
 import java.util.List;
 
+import edu.formation.model.Film;
+
 /**
  * Implémentation de l'interface FilmDao Son rôle : de persister les objets
  * métiers Film à l'aide du SQL et au moyen d'une BDD
