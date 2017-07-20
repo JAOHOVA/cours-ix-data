@@ -51,7 +51,14 @@ public class FilmDaoSql implements FilmDao
     @Override
     public Film findById(Integer id)
     {
-        return this.films.get(id);
+        if ((id - 1) < this.films.size())
+        {
+            return this.films.get(id - 1);
+        }
+        else
+        {
+            return null;
+        }
     }
 
 }
